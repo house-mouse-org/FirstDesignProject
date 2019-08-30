@@ -6,7 +6,7 @@
 body {
   background-size: cover;
   background-position: center;
-  background-image: url("https://source.unsplash.com/1600x900/?flower,bunny,doll");
+  background-image: url("https://source.unsplash.com/1600x900/?flower,doll");
 }
   
 #basicStarter {
@@ -26,12 +26,12 @@ body {
   line-height: 20vh;
   text-align: center;
   
-  animation: showingup 0.5s;
+  animation: showingup 1s;
 }
 
 @keyframes showingup {
- from {transform: translateY(-5vh); opacity: 0;}
- to {transform:translateY(0); opacity: 1;}
+ from {opacity: 0.2; transform: translateY(-10vh); }
+ to {opacity: 1; transform:translateY(0);}
  }
 
 </style>
