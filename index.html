@@ -6,7 +6,7 @@
 body {
   background-size: cover;
   background-position: center;
-  background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+  background-image: url("https://source.unsplash.com/1600x900/?flower,bunny,doll");
 }
   
 #basicStarter {
@@ -19,16 +19,20 @@ body {
   top: 25vh;
   left: 0;
  
-  background-color: black;
+  background-color: hsla(0, 0, 0, 0.75);
   color: white;
   font-family: 'News Cycle', sans-serif;
   font-size: 10vh;
-  /*
-  line-height: 50vh;
-  */
+  line-height: 20vh;
   text-align: center;
   
+  animation: showingup 0.5s;
 }
+
+@keyframes showingup {
+ from {transform: translateY(0); opacity: 0;}
+ to {transform:translateY(5vh); opacity: 1;}
+ }
 
 </style>
 <body>
