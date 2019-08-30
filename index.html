@@ -9,15 +9,15 @@ body {
   /* background-image: url("https://source.unsplash.com/_r2MWJrhzSQ/1600x900"); */
 }
 
-.container {
+
+  
+.basicStarter {
+  position: absolute;
+  margin: 0;
+  
   display: flex;
   flex-direction: column;
   align-contents: space-around;
-}
-  
-#basicStarter {
-  position: absolute;
-  margin: 0;
   
   width: 100vw;
   height: 50vh;
@@ -35,7 +35,7 @@ body {
   animation: showingup 1s;
 }
   
-  #basicButton {
+  .basicButton {
    /* position: relative; */
    /* display: inline-block; */
    width: 50%;
@@ -69,9 +69,25 @@ body {
  to {opacity: 1; transform:translateY(0);}
  }
 
+@media all and (max-width: 800px) {
+  .basicStarter {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 400px) {
+  .basicStarter {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+  
+  
 </style>
 <body>
-<div id="basicStarter">
+<div class="basicStarter">
 say Hello to me
   <div id="basicButton"> Hello </div>
 </div>
